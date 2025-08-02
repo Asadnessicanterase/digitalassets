@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Assets Dashboard</title>
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Chart.js for interactive charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Digital Assets Dashboard</div>
+            <ul class="nav-links">
+                <li><a href="#market">Market</a></li>
+                <li><a href="#participants">Participants</a></li>
+                <li><a href="#stablecoins">Stablecoins</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero section with background image and call to action -->
+    <section id="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-content">
+            <h1>Strengthening American Leadership in Digital Financial Technology</h1>
+            <p>A concise, interactive exploration of the 2025 Digital Assets Report</p>
+            <a href="#market" class="cta-button">Explore Dashboard</a>
+        </div>
+    </section>
+
+    <!-- Market section: bar chart of top cryptocurrencies -->
+    <section id="market" class="section">
+        <h2>Global Cryptocurrency Market Overview</h2>
+        <p>
+            The global cryptocurrency market capitalization stands at <strong>$3.69 trillion</strong> as of
+            July 13 2025【958218847998574†L270-L274】. The bar chart below illustrates the
+            dominance of leading cryptocurrencies by market capitalization.
+        </p>
+        <div class="chart-wrapper">
+            <canvas id="marketChart" aria-label="Top cryptocurrencies by market capitalization"></canvas>
+        </div>
+    </section>
+
+    <!-- Participants section: descriptive cards -->
+    <section id="participants" class="section">
+        <h2>Market Participants</h2>
+        <div class="cards">
+            <article class="card">
+                <h3>Issuers</h3>
+                <p>
+                    Entities that create and distribute digital assets, ranging from individuals and
+                    tech startups launching utility tokens to financial institutions issuing tokenized
+                    securities or stablecoins【1505†L1-L7】.
+                </p>
+            </article>
+            <article class="card">
+                <h3>Retail Participants</h3>
+                <p>
+                    Individuals driving growth and adoption of digital assets by buying, selling and
+                    using on‑chain applications【1505†L8-L14】.
+                </p>
+            </article>
+            <article class="card">
+                <h3>Institutional Investors</h3>
+                <p>
+                    Hedge funds, venture capital firms and asset managers investing in digital
+                    assets【1480†L1-L4】.
+                </p>
+            </article>
+            <article class="card">
+                <h3>Centralized Trading Platforms</h3>
+                <p>
+                    Exchanges that provide trading, custody and broker services for digital assets【1480†L5-L9】.
+                </p>
+            </article>
+            <article class="card">
+                <h3>Decentralized Protocols</h3>
+                <p>
+                    Developers and protocols supporting blockchains, wallets, smart contracts and
+                    decentralized applications【1480†L10-L13】.
+                </p>
+            </article>
+            <article class="card">
+                <h3>Network Support</h3>
+                <p>
+                    Actors such as miners, stakers, validators and node providers who operate and
+                    secure blockchain networks【1480†L14-L16】.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Stablecoins & payments section: doughnut chart -->
+    <section id="stablecoins" class="section">
+        <h2>Stablecoins &amp; Payments</h2>
+        <p>
+            Stablecoins are tokens designed to maintain a stable value relative to a reference asset
+            such as the U.S. dollar【1060†L9-L10】. Policymakers view dollar‑backed stablecoins as
+            the next wave of innovation in payments【880†L10-L13】.
+        </p>
+        <p class="definition">
+            <strong>Definition:</strong> A payment stablecoin is a digital asset designed to be used as a
+            means of payment and to maintain a stable value relative to a fixed monetary amount【2370†L1-L6】.
+        </p>
+        <div class="stable-container">
+            <div class="stable-info">
+                <h3>Share of Market Capitalization</h3>
+                <p>
+                    Although the overall digital asset market is worth several trillion dollars, only a
+                    modest portion of that value consists of dollar‑denominated stablecoins. The chart
+                    shows the approximate share of stablecoins compared to all other crypto assets.
+                </p>
+                <canvas id="stableChart" aria-label="Stablecoins share vs other digital assets"></canvas>
+            </div>
+            <div class="stable-image" aria-hidden="true"></div>
+        </div>
+    </section>
+
+    <!-- Timeline section -->
+    <section id="timeline" class="section">
+        <h2>Evolution of Digital Assets</h2>
+        <p>
+            Digital assets have experienced rapid innovation and disruption in the past decade. The
+            timeline below highlights key milestones, from the invention of Bitcoin to the
+            institutional adoption of crypto and the emergence of NFTs【1230†L1-L6】【1380†L4-L8】.
+        </p>
+        <div class="timeline" id="timelineContainer"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Digital Assets Dashboard. Built for educational purposes.</p>
+    </footer>
+
+    <!-- Script file -->
+    <script src="script.js"></script>
+</body>
+</html>
